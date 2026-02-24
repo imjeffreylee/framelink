@@ -1,5 +1,5 @@
 ---
-name: figmaComponent
+name: figma_component
 description: "Use this skill whenever asked to create a UI component, build a frontend element, or implement a design from a Figma link. It provides instructions on using the Framelink Figma MCP to extract design data."
 ---
 
