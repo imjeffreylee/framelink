@@ -37,7 +37,7 @@ export default function InfrastructureMonitor() {
             color: '#5A8D40',
             borderColor: '#5A8D40',
             textTransform: 'none',
-            borderRadius: 1,
+            borderRadius: 20,
             px: 1.25,
             py: 1.25,
             gap: 0.5,
