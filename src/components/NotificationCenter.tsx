@@ -45,7 +45,7 @@ function NotificationItem({
         </Typography>
       </Box>
       <Typography
-        sx={{ fontSize: '0.875rem', fontWeight: 400, color: statusColor }}
+        sx={{ fontSize: '0.875rem', fontWeight: 700, color: '#505050' }}
       >
         {status}
       </Typography>
@@ -105,17 +105,18 @@ export default function NotificationCenter() {
         width: 1,
         maxWidth: 400,
         bgcolor: '#FFFFFF',
-        borderRadius: 2.5,
+        borderRadius: '20px',
         overflow: 'hidden',
-        boxShadow: 2,
+        boxShadow: '0px 4px 8px 0px #00000040',
+        py: '10px',
+        px: '20px',
       }}
     >
       {/* Header */}
       <Box sx={{ px: 2.5, pt: 1.25, pb: 0 }}>
-        <Typography
-          sx={{ fontSize: '1.125rem', fontWeight: 700, color: '#505050' }}
-        >
-          Notification center (All Stores 314)
+        <Typography sx={{ fontSize: '1.125rem', color: '#505050' }}>
+          <span style={{ fontWeight: 700 }}>Notification center</span> (All
+          Stores 314)
         </Typography>
       </Box>
 

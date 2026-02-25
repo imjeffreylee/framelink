@@ -2,11 +2,12 @@
 
 import Image from 'next/image';
 import { Box, Typography } from '@mui/material';
+import { ReactNode } from 'react';
 
 interface StatusItemProps {
   icon: string;
   mainText: string;
-  subText: string;
+  subText: ReactNode;
 }
 
 export default function StatusItem({

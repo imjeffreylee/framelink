@@ -10,9 +10,9 @@ export default function InfrastructureMonitor() {
       sx={{
         width: 1,
         maxWidth: 420,
-        borderRadius: 3,
         overflow: 'hidden',
-        boxShadow: 2,
+        borderRadius: '20px',
+        boxShadow: '0px 4px 8px 0px #00000040',
       }}
     >
       {/* Header with Title and CSV Export Button */}
@@ -26,10 +26,9 @@ export default function InfrastructureMonitor() {
           bgcolor: 'white',
         }}
       >
-        <Typography
-          sx={{ fontSize: '1.125rem', fontWeight: 'bold', color: '#505050' }}
-        >
-          Infrastructure (All BS 365)
+        <Typography sx={{ fontSize: '1.125rem', color: '#505050' }}>
+          <span style={{ fontWeight: 'bold' }}>Infrastructure</span> (All BS
+          365)
         </Typography>
         <Button
           variant="outlined"
@@ -75,12 +74,20 @@ export default function InfrastructureMonitor() {
         <StatusItem
           icon="/icons/status-ok.svg"
           mainText="99,5%"
-          subText="BS online (358/365)"
+          subText={
+            <>
+              BS online (<span style={{ fontWeight: 700 }}>358</span>/365)
+            </>
+          }
         />
         <StatusItem
           icon="/icons/alert-triangle.svg"
           mainText="0,5%"
-          subText="BS fault (7/365)"
+          subText={
+            <>
+              BS fault (<span style={{ fontWeight: 700 }}>7</span>/365)
+            </>
+          }
         />
       </Box>
 
@@ -114,7 +121,7 @@ export default function InfrastructureMonitor() {
             16%
           </Typography>
           <Typography sx={{ fontSize: '0.75rem', color: '#505050' }}>
-            TRX fault (54/1082)
+            TRX fault (<span style={{ fontWeight: 700 }}>54</span>/1082)
           </Typography>
         </Box>
       </Box>
